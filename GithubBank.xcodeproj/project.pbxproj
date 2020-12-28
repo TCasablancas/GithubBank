@@ -21,6 +21,14 @@
 		EF26A4E1259A73C300ED5D2F /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF26A4DE259A73C300ED5D2F /* Roboto-Bold.ttf */; };
 		EF26A4E2259A73C300ED5D2F /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF26A4DF259A73C300ED5D2F /* Roboto-Regular.ttf */; };
 		EF26A4E3259A73C300ED5D2F /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF26A4E0259A73C300ED5D2F /* Roboto-Thin.ttf */; };
+		EF26A4E8259A7B2900ED5D2F /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A4E7259A7B2900ED5D2F /* Endpoints.swift */; };
+		EF26A4EE259A7BCC00ED5D2F /* Worker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A4ED259A7BCC00ED5D2F /* Worker.swift */; };
+		EF26A4F4259A7C1700ED5D2F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A4F3259A7C1700ED5D2F /* Request.swift */; };
+		EF26A4FC259A7D8100ED5D2F /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A4FB259A7D8100ED5D2F /* Response.swift */; };
+		EF26A501259A7D9800ED5D2F /* ServerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A500259A7D9800ED5D2F /* ServerError.swift */; };
+		EF26A509259A7DD400ED5D2F /* MainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A508259A7DD400ED5D2F /* MainData.swift */; };
+		EF26A50E259A7E3800ED5D2F /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A50D259A7E3800ED5D2F /* Repository.swift */; };
+		EF26A513259A7E9200ED5D2F /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A512259A7E9200ED5D2F /* Owner.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +73,14 @@
 		EF26A4DE259A73C300ED5D2F /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		EF26A4DF259A73C300ED5D2F /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		EF26A4E0259A73C300ED5D2F /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		EF26A4E7259A7B2900ED5D2F /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Endpoints.swift; path = GithubBank/Services/Endpoints.swift; sourceTree = SOURCE_ROOT; };
+		EF26A4ED259A7BCC00ED5D2F /* Worker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Worker.swift; sourceTree = "<group>"; };
+		EF26A4F3259A7C1700ED5D2F /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		EF26A4FB259A7D8100ED5D2F /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		EF26A500259A7D9800ED5D2F /* ServerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerError.swift; sourceTree = "<group>"; };
+		EF26A508259A7DD400ED5D2F /* MainData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainData.swift; sourceTree = "<group>"; };
+		EF26A50D259A7E3800ED5D2F /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		EF26A512259A7E9200ED5D2F /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		F05866450A9B3FB91FB38C1E /* Pods-GithubBankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubBankTests.release.xcconfig"; path = "Target Support Files/Pods-GithubBankTests/Pods-GithubBankTests.release.xcconfig"; sourceTree = "<group>"; };
 		FD06C93137088A2DCA007EDD /* Pods-GithubBank-GithubBankUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubBank-GithubBankUITests.release.xcconfig"; path = "Target Support Files/Pods-GithubBank-GithubBankUITests/Pods-GithubBank-GithubBankUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -198,6 +214,9 @@
 		EF26A4D6259A72CC00ED5D2F /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				EF26A4F2259A7BF300ED5D2F /* Reusable */,
+				EF26A4E7259A7B2900ED5D2F /* Endpoints.swift */,
+				EF26A4ED259A7BCC00ED5D2F /* Worker.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -212,6 +231,7 @@
 		EF26A4D8259A72D900ED5D2F /* Theme */ = {
 			isa = PBXGroup;
 			children = (
+				EF26A4EC259A7B8100ED5D2F /* UIComponents */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -219,6 +239,9 @@
 		EF26A4D9259A72DF00ED5D2F /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				EF26A508259A7DD400ED5D2F /* MainData.swift */,
+				EF26A50D259A7E3800ED5D2F /* Repository.swift */,
+				EF26A512259A7E9200ED5D2F /* Owner.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -231,6 +254,23 @@
 				EF26A4E0259A73C300ED5D2F /* Roboto-Thin.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		EF26A4EC259A7B8100ED5D2F /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		EF26A4F2259A7BF300ED5D2F /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				EF26A4F3259A7C1700ED5D2F /* Request.swift */,
+				EF26A4FB259A7D8100ED5D2F /* Response.swift */,
+				EF26A500259A7D9800ED5D2F /* ServerError.swift */,
+			);
+			path = Reusable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -474,9 +514,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF26A4EE259A7BCC00ED5D2F /* Worker.swift in Sources */,
+				EF26A4F4259A7C1700ED5D2F /* Request.swift in Sources */,
+				EF26A501259A7D9800ED5D2F /* ServerError.swift in Sources */,
 				EF26A48F259A707200ED5D2F /* ViewController.swift in Sources */,
+				EF26A509259A7DD400ED5D2F /* MainData.swift in Sources */,
 				EF26A48B259A707200ED5D2F /* AppDelegate.swift in Sources */,
+				EF26A4E8259A7B2900ED5D2F /* Endpoints.swift in Sources */,
+				EF26A50E259A7E3800ED5D2F /* Repository.swift in Sources */,
+				EF26A513259A7E9200ED5D2F /* Owner.swift in Sources */,
 				EF26A48D259A707200ED5D2F /* SceneDelegate.swift in Sources */,
+				EF26A4FC259A7D8100ED5D2F /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
