@@ -1,0 +1,6 @@
+module Pods_GithubBankTests {
+  umbrella header "Pods-GithubBankTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

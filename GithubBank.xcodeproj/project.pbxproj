@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A15E2173BB5D4D8705172ECB /* libPods-GithubBank-GithubBankUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A26C142C4C2A21B7A27F57 /* libPods-GithubBank-GithubBankUITests.a */; };
+		CF4F329F414F5B812013CB01 /* libPods-GithubBankTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 641EAF4EDB2021A9B8875267 /* libPods-GithubBankTests.a */; };
+		D4ABC8153C158A00C8E26E54 /* libPods-GithubBank.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88AD6A7E64ADB046FA8AC0A6 /* libPods-GithubBank.a */; };
 		EF26A48B259A707200ED5D2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A48A259A707200ED5D2F /* AppDelegate.swift */; };
 		EF26A48D259A707200ED5D2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A48C259A707200ED5D2F /* SceneDelegate.swift */; };
 		EF26A48F259A707200ED5D2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A48E259A707200ED5D2F /* ViewController.swift */; };
@@ -15,6 +18,9 @@
 		EF26A497259A707300ED5D2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF26A495259A707300ED5D2F /* LaunchScreen.storyboard */; };
 		EF26A4A2259A707300ED5D2F /* GithubBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A4A1259A707300ED5D2F /* GithubBankTests.swift */; };
 		EF26A4AD259A707300ED5D2F /* GithubBankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A4AC259A707300ED5D2F /* GithubBankUITests.swift */; };
+		EF26A4E1259A73C300ED5D2F /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF26A4DE259A73C300ED5D2F /* Roboto-Bold.ttf */; };
+		EF26A4E2259A73C300ED5D2F /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF26A4DF259A73C300ED5D2F /* Roboto-Regular.ttf */; };
+		EF26A4E3259A73C300ED5D2F /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF26A4E0259A73C300ED5D2F /* Roboto-Thin.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07A26C142C4C2A21B7A27F57 /* libPods-GithubBank-GithubBankUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GithubBank-GithubBankUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		641EAF4EDB2021A9B8875267 /* libPods-GithubBankTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GithubBankTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6562D8BBD945AF6418033330 /* Pods-GithubBank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubBank.release.xcconfig"; path = "Target Support Files/Pods-GithubBank/Pods-GithubBank.release.xcconfig"; sourceTree = "<group>"; };
+		88AD6A7E64ADB046FA8AC0A6 /* libPods-GithubBank.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GithubBank.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C650BF7E8FA33511D810F9 /* Pods-GithubBankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubBankTests.debug.xcconfig"; path = "Target Support Files/Pods-GithubBankTests/Pods-GithubBankTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CA7DD489167EF3A0CFF59DF4 /* Pods-GithubBank-GithubBankUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubBank-GithubBankUITests.debug.xcconfig"; path = "Target Support Files/Pods-GithubBank-GithubBankUITests/Pods-GithubBank-GithubBankUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E75A2D9252C684BAF8905F3F /* Pods-GithubBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubBank.debug.xcconfig"; path = "Target Support Files/Pods-GithubBank/Pods-GithubBank.debug.xcconfig"; sourceTree = "<group>"; };
 		EF26A487259A707200ED5D2F /* GithubBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF26A48A259A707200ED5D2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF26A48C259A707200ED5D2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +62,11 @@
 		EF26A4A8259A707300ED5D2F /* GithubBankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GithubBankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF26A4AC259A707300ED5D2F /* GithubBankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubBankUITests.swift; sourceTree = "<group>"; };
 		EF26A4AE259A707300ED5D2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF26A4DE259A73C300ED5D2F /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		EF26A4DF259A73C300ED5D2F /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		EF26A4E0259A73C300ED5D2F /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		F05866450A9B3FB91FB38C1E /* Pods-GithubBankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubBankTests.release.xcconfig"; path = "Target Support Files/Pods-GithubBankTests/Pods-GithubBankTests.release.xcconfig"; sourceTree = "<group>"; };
+		FD06C93137088A2DCA007EDD /* Pods-GithubBank-GithubBankUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubBank-GithubBankUITests.release.xcconfig"; path = "Target Support Files/Pods-GithubBank-GithubBankUITests/Pods-GithubBank-GithubBankUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4ABC8153C158A00C8E26E54 /* libPods-GithubBank.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF4F329F414F5B812013CB01 /* libPods-GithubBankTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +90,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A15E2173BB5D4D8705172ECB /* libPods-GithubBank-GithubBankUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6ED9F180D9D33B06935B4B17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88AD6A7E64ADB046FA8AC0A6 /* libPods-GithubBank.a */,
+				07A26C142C4C2A21B7A27F57 /* libPods-GithubBank-GithubBankUITests.a */,
+				641EAF4EDB2021A9B8875267 /* libPods-GithubBankTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC1473D281D3F87EC05B6EC7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E75A2D9252C684BAF8905F3F /* Pods-GithubBank.debug.xcconfig */,
+				6562D8BBD945AF6418033330 /* Pods-GithubBank.release.xcconfig */,
+				CA7DD489167EF3A0CFF59DF4 /* Pods-GithubBank-GithubBankUITests.debug.xcconfig */,
+				FD06C93137088A2DCA007EDD /* Pods-GithubBank-GithubBankUITests.release.xcconfig */,
+				A1C650BF7E8FA33511D810F9 /* Pods-GithubBankTests.debug.xcconfig */,
+				F05866450A9B3FB91FB38C1E /* Pods-GithubBankTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		EF26A47E259A707100ED5D2F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +127,8 @@
 				EF26A4A0259A707300ED5D2F /* GithubBankTests */,
 				EF26A4AB259A707300ED5D2F /* GithubBankUITests */,
 				EF26A488259A707200ED5D2F /* Products */,
+				EC1473D281D3F87EC05B6EC7 /* Pods */,
+				6ED9F180D9D33B06935B4B17 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +145,13 @@
 		EF26A489259A707200ED5D2F /* GithubBank */ = {
 			isa = PBXGroup;
 			children = (
-				EF26A48A259A707200ED5D2F /* AppDelegate.swift */,
-				EF26A48C259A707200ED5D2F /* SceneDelegate.swift */,
+				EF26A4D1259A72BE00ED5D2F /* Assets */,
+				EF26A4D2259A72C600ED5D2F /* Common */,
+				EF26A4D9259A72DF00ED5D2F /* Models */,
+				EF26A4D7259A72D400ED5D2F /* Scenes */,
+				EF26A4D6259A72CC00ED5D2F /* Services */,
+				EF26A4D8259A72D900ED5D2F /* Theme */,
 				EF26A48E259A707200ED5D2F /* ViewController.swift */,
-				EF26A490259A707200ED5D2F /* Main.storyboard */,
-				EF26A493259A707300ED5D2F /* Assets.xcassets */,
-				EF26A495259A707300ED5D2F /* LaunchScreen.storyboard */,
 				EF26A498259A707300ED5D2F /* Info.plist */,
 			);
 			path = GithubBank;
@@ -128,6 +175,64 @@
 			path = GithubBankUITests;
 			sourceTree = "<group>";
 		};
+		EF26A4D1259A72BE00ED5D2F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EF26A493259A707300ED5D2F /* Assets.xcassets */,
+				EF26A4DD259A734600ED5D2F /* Fonts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		EF26A4D2259A72C600ED5D2F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EF26A490259A707200ED5D2F /* Main.storyboard */,
+				EF26A495259A707300ED5D2F /* LaunchScreen.storyboard */,
+				EF26A48A259A707200ED5D2F /* AppDelegate.swift */,
+				EF26A48C259A707200ED5D2F /* SceneDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EF26A4D6259A72CC00ED5D2F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EF26A4D7259A72D400ED5D2F /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EF26A4D8259A72D900ED5D2F /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		EF26A4D9259A72DF00ED5D2F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EF26A4DD259A734600ED5D2F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				EF26A4DE259A73C300ED5D2F /* Roboto-Bold.ttf */,
+				EF26A4DF259A73C300ED5D2F /* Roboto-Regular.ttf */,
+				EF26A4E0259A73C300ED5D2F /* Roboto-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +240,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF26A4B1259A707300ED5D2F /* Build configuration list for PBXNativeTarget "GithubBank" */;
 			buildPhases = (
+				AFD764DFC3548FFEF69F1CFF /* [CP] Check Pods Manifest.lock */,
 				EF26A483259A707100ED5D2F /* Sources */,
 				EF26A484259A707100ED5D2F /* Frameworks */,
 				EF26A485259A707100ED5D2F /* Resources */,
+				76A578245DE2B69B2E9E2B7B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,6 +259,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF26A4B4259A707300ED5D2F /* Build configuration list for PBXNativeTarget "GithubBankTests" */;
 			buildPhases = (
+				280F238C53A9B7C2B09015E3 /* [CP] Check Pods Manifest.lock */,
 				EF26A499259A707300ED5D2F /* Sources */,
 				EF26A49A259A707300ED5D2F /* Frameworks */,
 				EF26A49B259A707300ED5D2F /* Resources */,
@@ -170,9 +278,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EF26A4B7259A707300ED5D2F /* Build configuration list for PBXNativeTarget "GithubBankUITests" */;
 			buildPhases = (
+				46C60CEEC80A94991E2F5E63 /* [CP] Check Pods Manifest.lock */,
 				EF26A4A4259A707300ED5D2F /* Sources */,
 				EF26A4A5259A707300ED5D2F /* Frameworks */,
 				EF26A4A6259A707300ED5D2F /* Resources */,
+				250AE7CECE61810509290EB1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,6 +343,9 @@
 			files = (
 				EF26A497259A707300ED5D2F /* LaunchScreen.storyboard in Resources */,
 				EF26A494259A707300ED5D2F /* Assets.xcassets in Resources */,
+				EF26A4E3259A73C300ED5D2F /* Roboto-Thin.ttf in Resources */,
+				EF26A4E2259A73C300ED5D2F /* Roboto-Regular.ttf in Resources */,
+				EF26A4E1259A73C300ED5D2F /* Roboto-Bold.ttf in Resources */,
 				EF26A492259A707200ED5D2F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +365,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		250AE7CECE61810509290EB1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GithubBank-GithubBankUITests/Pods-GithubBank-GithubBankUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GithubBank-GithubBankUITests/Pods-GithubBank-GithubBankUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GithubBank-GithubBankUITests/Pods-GithubBank-GithubBankUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		280F238C53A9B7C2B09015E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GithubBankTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46C60CEEC80A94991E2F5E63 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GithubBank-GithubBankUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		76A578245DE2B69B2E9E2B7B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GithubBank/Pods-GithubBank-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GithubBank/Pods-GithubBank-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GithubBank/Pods-GithubBank-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFD764DFC3548FFEF69F1CFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GithubBank-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EF26A483259A707100ED5D2F /* Sources */ = {
@@ -433,6 +649,7 @@
 		};
 		EF26A4B2259A707300ED5D2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E75A2D9252C684BAF8905F3F /* Pods-GithubBank.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +669,7 @@
 		};
 		EF26A4B3259A707300ED5D2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6562D8BBD945AF6418033330 /* Pods-GithubBank.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +689,7 @@
 		};
 		EF26A4B5259A707300ED5D2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1C650BF7E8FA33511D810F9 /* Pods-GithubBankTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +712,7 @@
 		};
 		EF26A4B6259A707300ED5D2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F05866450A9B3FB91FB38C1E /* Pods-GithubBankTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +735,7 @@
 		};
 		EF26A4B8259A707300ED5D2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA7DD489167EF3A0CFF59DF4 /* Pods-GithubBank-GithubBankUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +756,7 @@
 		};
 		EF26A4B9259A707300ED5D2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD06C93137088A2DCA007EDD /* Pods-GithubBank-GithubBankUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
