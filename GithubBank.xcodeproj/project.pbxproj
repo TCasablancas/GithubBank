@@ -29,6 +29,15 @@
 		EF26A509259A7DD400ED5D2F /* MainData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A508259A7DD400ED5D2F /* MainData.swift */; };
 		EF26A50E259A7E3800ED5D2F /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A50D259A7E3800ED5D2F /* Repository.swift */; };
 		EF26A513259A7E9200ED5D2F /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A512259A7E9200ED5D2F /* Owner.swift */; };
+		EF26A518259BA8BE00ED5D2F /* ViewCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A517259BA8BE00ED5D2F /* ViewCode.swift */; };
+		EF26A51D259BA9D000ED5D2F /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A51C259BA9D000ED5D2F /* Color+Extension.swift */; };
+		EF26A522259BAB9100ED5D2F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A521259BAB9100ED5D2F /* Constants.swift */; };
+		EF26A527259BCB3500ED5D2F /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A526259BCB3500ED5D2F /* ContainerView.swift */; };
+		EF26A536259BD66F00ED5D2F /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A535259BD66F00ED5D2F /* MainInteractor.swift */; };
+		EF26A53E259BD82B00ED5D2F /* RepositoriesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A53D259BD82B00ED5D2F /* RepositoriesCollectionView.swift */; };
+		EF26A543259BD85700ED5D2F /* RepositoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A542259BD85700ED5D2F /* RepositoriesCollectionViewCell.swift */; };
+		EF26A548259BD90200ED5D2F /* MainModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A547259BD90200ED5D2F /* MainModels.swift */; };
+		EF26A550259BDA3800ED5D2F /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A54F259BDA3800ED5D2F /* MainPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +90,15 @@
 		EF26A508259A7DD400ED5D2F /* MainData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainData.swift; sourceTree = "<group>"; };
 		EF26A50D259A7E3800ED5D2F /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		EF26A512259A7E9200ED5D2F /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		EF26A517259BA8BE00ED5D2F /* ViewCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCode.swift; sourceTree = "<group>"; };
+		EF26A51C259BA9D000ED5D2F /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		EF26A521259BAB9100ED5D2F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EF26A526259BCB3500ED5D2F /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		EF26A535259BD66F00ED5D2F /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		EF26A53D259BD82B00ED5D2F /* RepositoriesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesCollectionView.swift; sourceTree = "<group>"; };
+		EF26A542259BD85700ED5D2F /* RepositoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesCollectionViewCell.swift; sourceTree = "<group>"; };
+		EF26A547259BD90200ED5D2F /* MainModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModels.swift; sourceTree = "<group>"; };
+		EF26A54F259BDA3800ED5D2F /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		F05866450A9B3FB91FB38C1E /* Pods-GithubBankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubBankTests.release.xcconfig"; path = "Target Support Files/Pods-GithubBankTests/Pods-GithubBankTests.release.xcconfig"; sourceTree = "<group>"; };
 		FD06C93137088A2DCA007EDD /* Pods-GithubBank-GithubBankUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubBank-GithubBankUITests.release.xcconfig"; path = "Target Support Files/Pods-GithubBank-GithubBankUITests/Pods-GithubBank-GithubBankUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -207,6 +225,7 @@
 				EF26A495259A707300ED5D2F /* LaunchScreen.storyboard */,
 				EF26A48A259A707200ED5D2F /* AppDelegate.swift */,
 				EF26A48C259A707200ED5D2F /* SceneDelegate.swift */,
+				EF26A517259BA8BE00ED5D2F /* ViewCode.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -224,6 +243,10 @@
 		EF26A4D7259A72D400ED5D2F /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				EF26A557259BDB6F00ED5D2F /* CollectionView */,
+				EF26A535259BD66F00ED5D2F /* MainInteractor.swift */,
+				EF26A54F259BDA3800ED5D2F /* MainPresenter.swift */,
+				EF26A547259BD90200ED5D2F /* MainModels.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -232,6 +255,8 @@
 			isa = PBXGroup;
 			children = (
 				EF26A4EC259A7B8100ED5D2F /* UIComponents */,
+				EF26A51C259BA9D000ED5D2F /* Color+Extension.swift */,
+				EF26A521259BAB9100ED5D2F /* Constants.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -259,6 +284,7 @@
 		EF26A4EC259A7B8100ED5D2F /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				EF26A526259BCB3500ED5D2F /* ContainerView.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -271,6 +297,15 @@
 				EF26A500259A7D9800ED5D2F /* ServerError.swift */,
 			);
 			path = Reusable;
+			sourceTree = "<group>";
+		};
+		EF26A557259BDB6F00ED5D2F /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				EF26A53D259BD82B00ED5D2F /* RepositoriesCollectionView.swift */,
+				EF26A542259BD85700ED5D2F /* RepositoriesCollectionViewCell.swift */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -515,16 +550,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF26A4EE259A7BCC00ED5D2F /* Worker.swift in Sources */,
+				EF26A53E259BD82B00ED5D2F /* RepositoriesCollectionView.swift in Sources */,
 				EF26A4F4259A7C1700ED5D2F /* Request.swift in Sources */,
 				EF26A501259A7D9800ED5D2F /* ServerError.swift in Sources */,
 				EF26A48F259A707200ED5D2F /* ViewController.swift in Sources */,
+				EF26A548259BD90200ED5D2F /* MainModels.swift in Sources */,
 				EF26A509259A7DD400ED5D2F /* MainData.swift in Sources */,
 				EF26A48B259A707200ED5D2F /* AppDelegate.swift in Sources */,
+				EF26A527259BCB3500ED5D2F /* ContainerView.swift in Sources */,
 				EF26A4E8259A7B2900ED5D2F /* Endpoints.swift in Sources */,
 				EF26A50E259A7E3800ED5D2F /* Repository.swift in Sources */,
 				EF26A513259A7E9200ED5D2F /* Owner.swift in Sources */,
 				EF26A48D259A707200ED5D2F /* SceneDelegate.swift in Sources */,
 				EF26A4FC259A7D8100ED5D2F /* Response.swift in Sources */,
+				EF26A522259BAB9100ED5D2F /* Constants.swift in Sources */,
+				EF26A550259BDA3800ED5D2F /* MainPresenter.swift in Sources */,
+				EF26A518259BA8BE00ED5D2F /* ViewCode.swift in Sources */,
+				EF26A51D259BA9D000ED5D2F /* Color+Extension.swift in Sources */,
+				EF26A543259BD85700ED5D2F /* RepositoriesCollectionViewCell.swift in Sources */,
+				EF26A536259BD66F00ED5D2F /* MainInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

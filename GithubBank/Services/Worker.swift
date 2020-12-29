@@ -9,7 +9,14 @@ import Foundation
 import Alamofire
 import ObjectMapper
 
-class Worker: Request {
+protocol WorkerDelegate {
+    func getreposList(completion: @escaping (_ response: Response<MainData>) -> Void)
+    func getResultValue() -> [[String:Any]]
+}
+
+class Worker: Request, WorkerDelegate {
+    
+    public var result: [[String:Any]]?
     
     func getreposList(completion: @escaping (_ response: Response<MainData>) -> Void) {
         let url = Endpoints.getReposEndpoint
@@ -36,5 +43,9 @@ class Worker: Request {
                 }
             }
         }
+    }
+    
+    func getResultValue() -> [[String:Any]] {
+        return self.result ?? [[:]]
     }
 }

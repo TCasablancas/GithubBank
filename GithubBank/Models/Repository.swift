@@ -17,6 +17,21 @@ struct Repository: Mappable {
     var full_name: String?
     var owner: Owner?
     
+    //MARK: - Retrieve Owner Data
+    var avatar: String? { owner?.avatar_url }
+    var developer: String? { owner?.login }
+    
+    //MARK: - Initializer for Tests
+    init(name: String? = nil, url: String? = nil, description: String? = nil, stargazers_count: Int? = nil, forks_count: Int? = nil, full_name: String? = nil, owner: Owner? = nil) {
+        self.name = name
+        self.url = url
+        self.description = description
+        self.stargazers_count = stargazers_count
+        self.forks_count = forks_count
+        self.full_name = full_name
+        self.owner = owner
+    }
+    
     init?(map: Map) {
         name = (try? map.value("name")) ?? ""
         url = (try? map.value("url")) ?? ""
