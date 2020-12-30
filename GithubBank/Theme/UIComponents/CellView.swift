@@ -54,6 +54,7 @@ extension CellView: ViewCode {
     func viewHierarchy() {
         self.addSubview(container)
         container.addSubview(cellContainer)
+        cellContainer.addSubview(stackView)
     }
     
     func setupConstraints() {
@@ -63,6 +64,11 @@ extension CellView: ViewCode {
         }
         
         cellContainer.snp.makeConstraints { make in
+            make.top.left.equalToSuperview().offset(10)
+            make.right.bottom.equalToSuperview().offset(-10)
+        }
+        
+        stackView.snp.makeConstraints { make in
             make.top.left.equalToSuperview().offset(10)
             make.right.bottom.equalToSuperview().offset(-10)
         }

@@ -109,7 +109,15 @@ class RepositoriesCollectionView: UICollectionViewController {
     }
 }
 
-// MARK: - ReposPresenterOutput Methods
+// MARK: - UICollectionViewDelegateFlowLayout Methods
+
+extension RepositoriesCollectionView: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.bounds.width, height: 160)
+    }
+}
+
+// MARK: - MainPresenterOutput Methods
 
 extension RepositoriesCollectionView: MainPresenterOutput {
     func displayStartLoading() {
@@ -135,6 +143,8 @@ extension RepositoriesCollectionView: ViewCode {
     
     func setupConstraints() {
         mainView.snp.makeConstraints{ make in
+            make.width.equalToSuperview()
+            make.height.equalToSuperview()
         }
         
         viewContainer.snp.makeConstraints { make in
