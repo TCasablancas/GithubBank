@@ -11,6 +11,18 @@ import SnapKit
 private let reuseIdentifier = "RepositoriesCollectionViewCell"
 
 class RepositoriesCollectionView: UICollectionViewController {
+    // MARK: - UI Components
+    
+    lazy var mainView: UIView = {
+        let view = UIView()
+        view.backgroundColor = Constants.default.bgGray
+        return view
+    }()
+    
+    lazy var viewContainer: ContainerView = {
+        let view = ContainerView()
+        return view
+    }()
     
     lazy var activityIndicator: UIActivityIndicatorView = {
         let activity = UIActivityIndicatorView()
@@ -66,8 +78,7 @@ class RepositoriesCollectionView: UICollectionViewController {
 //        navigation?.backgroundColor = Theme.default.gray
         navigation?.shadowImage = UIImage()
         let attrs = [
-            NSAttributedString.Key.foregroundColor: UIColor.red,
-//            NSAttributedString.Key.font: UIFont(name: Font.poppinsBold.rawValue, size: 24)
+            NSAttributedString.Key.foregroundColor: UIColor.red
         ]
 
         UINavigationBar.appearance().titleTextAttributes = attrs
@@ -93,7 +104,6 @@ class RepositoriesCollectionView: UICollectionViewController {
         
         let item = repositories[indexPath.item]
         cell.configureWith(with: item)
-//        cell.delegate = self
         
         return cell
     }
@@ -119,13 +129,20 @@ extension RepositoriesCollectionView: MainPresenterOutput {
 extension RepositoriesCollectionView: ViewCode {
     func viewHierarchy() {
         self.view.addSubview(activityIndicator)
+        self.view.addSubview(mainView)
+        mainView.addSubview(viewContainer)
     }
     
     func setupConstraints() {
+        mainView.snp.makeConstraints{ make in
+        }
+        
+        viewContainer.snp.makeConstraints { make in
+        }
+        
         activityIndicator.snp.makeConstraints { make in
             make.height.width.equalTo(50)
-            make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview()
+            
         }
     }
 }

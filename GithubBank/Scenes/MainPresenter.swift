@@ -27,10 +27,8 @@ class MainPresenter: MainInteractorOutput {
                 name: $0.name,
                 description: $0.description,
                 stars: $0.stargazers_count,
-                forks: $0.forks_count,
                 avatar: $0.avatar,
-                developer: $0.developer,
-                full_name: $0.full_name)
+                developer: $0.developer)
         })
         
         output?.displayRepositories(viewModel: viewModel)

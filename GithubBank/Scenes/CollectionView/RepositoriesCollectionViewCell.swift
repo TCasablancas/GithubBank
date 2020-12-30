@@ -15,6 +15,18 @@ protocol RepositoriesCollectionViewCellDelegate: AnyObject {
 
 class RepositoriesCollectionViewCell: UICollectionViewCell {
     
+    // MARK: - UI Components
+    
+    private lazy var cellComponent: CellView = {
+        let view = CellView()
+        return view
+    }()
+    
+    private lazy var mainView: MainComponents = {
+        let view = MainComponents()
+        return view
+    }()
+    
     public weak var delegate: RepositoriesCollectionViewCellDelegate?
     private var repository: MainModels.RepositoryView.ViewModel?
     
@@ -31,18 +43,22 @@ class RepositoriesCollectionViewCell: UICollectionViewCell {
         self.repository = repository
         
         DispatchQueue.main.async {
-            
+            self.mainView.title.text = repository.name
+            self.mainView.repoDescription.text = repository.description
         }
     }
 }
 
 extension RepositoriesCollectionViewCell: ViewCode {
     func viewHierarchy() {
-        
+        self.addSubview(cellComponent)
     }
     
     func setupConstraints() {
-        
+        cellComponent.snp.makeConstraints { make in
+            make.width.equalToSuperview()
+            make.height.equalToSuperview()
+        }
     }
     
     

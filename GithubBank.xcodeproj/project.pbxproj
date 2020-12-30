@@ -10,6 +10,10 @@
 		A15E2173BB5D4D8705172ECB /* libPods-GithubBank-GithubBankUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07A26C142C4C2A21B7A27F57 /* libPods-GithubBank-GithubBankUITests.a */; };
 		CF4F329F414F5B812013CB01 /* libPods-GithubBankTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 641EAF4EDB2021A9B8875267 /* libPods-GithubBankTests.a */; };
 		D4ABC8153C158A00C8E26E54 /* libPods-GithubBank.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88AD6A7E64ADB046FA8AC0A6 /* libPods-GithubBank.a */; };
+		EF0FF397259CC31C000D6E3F /* OwnerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0FF396259CC31C000D6E3F /* OwnerData.swift */; };
+		EF0FF39C259CC6EA000D6E3F /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0FF39B259CC6EA000D6E3F /* CellView.swift */; };
+		EF0FF3A1259CC87D000D6E3F /* StarsCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0FF3A0259CC87D000D6E3F /* StarsCounter.swift */; };
+		EF0FF3A6259CCA8C000D6E3F /* MainComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0FF3A5259CCA8C000D6E3F /* MainComponents.swift */; };
 		EF26A48B259A707200ED5D2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A48A259A707200ED5D2F /* AppDelegate.swift */; };
 		EF26A48D259A707200ED5D2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A48C259A707200ED5D2F /* SceneDelegate.swift */; };
 		EF26A48F259A707200ED5D2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A48E259A707200ED5D2F /* ViewController.swift */; };
@@ -64,6 +68,10 @@
 		A1C650BF7E8FA33511D810F9 /* Pods-GithubBankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubBankTests.debug.xcconfig"; path = "Target Support Files/Pods-GithubBankTests/Pods-GithubBankTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CA7DD489167EF3A0CFF59DF4 /* Pods-GithubBank-GithubBankUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubBank-GithubBankUITests.debug.xcconfig"; path = "Target Support Files/Pods-GithubBank-GithubBankUITests/Pods-GithubBank-GithubBankUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E75A2D9252C684BAF8905F3F /* Pods-GithubBank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GithubBank.debug.xcconfig"; path = "Target Support Files/Pods-GithubBank/Pods-GithubBank.debug.xcconfig"; sourceTree = "<group>"; };
+		EF0FF396259CC31C000D6E3F /* OwnerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnerData.swift; sourceTree = "<group>"; };
+		EF0FF39B259CC6EA000D6E3F /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		EF0FF3A0259CC87D000D6E3F /* StarsCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsCounter.swift; sourceTree = "<group>"; };
+		EF0FF3A5259CCA8C000D6E3F /* MainComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainComponents.swift; sourceTree = "<group>"; };
 		EF26A487259A707200ED5D2F /* GithubBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF26A48A259A707200ED5D2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF26A48C259A707200ED5D2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -282,6 +290,10 @@
 			isa = PBXGroup;
 			children = (
 				EF26A526259BCB3500ED5D2F /* ContainerView.swift */,
+				EF0FF396259CC31C000D6E3F /* OwnerData.swift */,
+				EF0FF39B259CC6EA000D6E3F /* CellView.swift */,
+				EF0FF3A0259CC87D000D6E3F /* StarsCounter.swift */,
+				EF0FF3A5259CCA8C000D6E3F /* MainComponents.swift */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -545,6 +557,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF0FF3A1259CC87D000D6E3F /* StarsCounter.swift in Sources */,
+				EF0FF39C259CC6EA000D6E3F /* CellView.swift in Sources */,
+				EF0FF3A6259CCA8C000D6E3F /* MainComponents.swift in Sources */,
 				EF26A4EE259A7BCC00ED5D2F /* Worker.swift in Sources */,
 				EF26A53E259BD82B00ED5D2F /* RepositoriesCollectionView.swift in Sources */,
 				EF26A4F4259A7C1700ED5D2F /* Request.swift in Sources */,
@@ -564,6 +579,7 @@
 				EF26A518259BA8BE00ED5D2F /* ViewCode.swift in Sources */,
 				EF26A51D259BA9D000ED5D2F /* Color+Extension.swift in Sources */,
 				EF26A543259BD85700ED5D2F /* RepositoriesCollectionViewCell.swift in Sources */,
+				EF0FF397259CC31C000D6E3F /* OwnerData.swift in Sources */,
 				EF26A536259BD66F00ED5D2F /* MainInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
