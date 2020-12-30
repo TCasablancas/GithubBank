@@ -15,7 +15,7 @@ protocol MainPresenterOutput: AnyObject {
 
 class MainPresenter: MainInteractorOutput {
     weak var output: MainPresenterOutput?
-    var viewController: ViewController?
+    var viewController: RepositoriesCollectionView?
     
     func didStartLoading() {
         output?.displayStartLoading()
