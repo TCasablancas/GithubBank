@@ -44,7 +44,10 @@ class RepositoriesCollectionViewCell: UICollectionViewCell {
             cell.mainComponents.repoDescription.text = repository.description
             cell.ownerData.ownerAvatar.image = UIImage(named: repository.avatar ?? "")
             cell.ownerData.ownerName.text = repository.developer
-            cell.mainComponents.stars.counter.text = repository.stars.flatMap(String.init)
+            
+            let starsCount = repository.stars.flatMap(String.init)
+            let starsConverted = starsCount?.formatNumber(repository.stars!)
+            cell.mainComponents.stars.counter.text = starsConverted
             
             if let url = URL(string: repository.avatar ?? "") {
                 cell.ownerData.ownerAvatar.kf.indicatorType = .activity

@@ -38,7 +38,7 @@ class StarsCounter: UIView {
     
     public lazy var counter: UILabel = {
         let label = UILabel()
-        label.text = "3220"
+        label.text = String("3220" + "k")
         label.textAlignment = .center
         label.font = UIFont(name: "Roboto-Medium", size: 13.0)
         label.numberOfLines = 0
