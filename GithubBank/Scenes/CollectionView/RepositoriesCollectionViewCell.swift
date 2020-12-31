@@ -22,11 +22,6 @@ class RepositoriesCollectionViewCell: UICollectionViewCell {
         return view
     }()
     
-    private lazy var mainView: MainComponents = {
-        let view = MainComponents()
-        return view
-    }()
-    
     public weak var delegate: RepositoriesCollectionViewCellDelegate?
     private var repository: MainModels.RepositoryView.ViewModel?
     
@@ -42,9 +37,21 @@ class RepositoriesCollectionViewCell: UICollectionViewCell {
     public func configureWith(with repository: MainModels.RepositoryView.ViewModel) {
         self.repository = repository
         
+        let cell = self.cellComponent
+        
         DispatchQueue.main.async {
-            self.mainView.title.text = repository.name
-            self.mainView.repoDescription.text = repository.description
+            cell.mainComponents.title.text = repository.name
+            cell.mainComponents.repoDescription.text = repository.description
+            cell.ownerData.ownerAvatar.image = UIImage(named: repository.avatar ?? "")
+            cell.ownerData.ownerName.text = repository.developer
+            cell.mainComponents.stars.counter.text = repository.stars.flatMap(String.init)
+            
+            if let url = URL(string: repository.avatar ?? "") {
+                cell.ownerData.ownerAvatar.kf.indicatorType = .activity
+                cell.ownerData.ownerAvatar.kf.setImage(with: url)
+            } else {
+                cell.ownerData.ownerAvatar.image = UIImage(named: "")
+            }
         }
     }
 }

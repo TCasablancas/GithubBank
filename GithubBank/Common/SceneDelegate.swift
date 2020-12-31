@@ -18,9 +18,19 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
+        let appearance = UINavigationBar.appearance()
+        let attrs = [
+            NSAttributedString.Key.foregroundColor: Constants.default.iconColor
+        ] as [ NSAttributedString.Key : Any ]
+        
+        appearance.largeTitleTextAttributes = attrs
+        appearance.prefersLargeTitles = true
+        appearance.titleTextAttributes = attrs
+        appearance.isTranslucent = true
+        appearance.backgroundColor = Constants.default.bgGray
+        
         let presenter = MainPresenter()
-        let worker = Worker()
-        let interactor = MainInteractor(output: presenter, worker: worker)
+        let interactor = MainInteractor(output: presenter, worker: Worker())
         let rootViewController = RepositoriesCollectionView(interactor: interactor)
         
         presenter.output = rootViewController

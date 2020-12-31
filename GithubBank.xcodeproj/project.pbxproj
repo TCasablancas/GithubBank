@@ -14,6 +14,7 @@
 		EF0FF39C259CC6EA000D6E3F /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0FF39B259CC6EA000D6E3F /* CellView.swift */; };
 		EF0FF3A1259CC87D000D6E3F /* StarsCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0FF3A0259CC87D000D6E3F /* StarsCounter.swift */; };
 		EF0FF3A6259CCA8C000D6E3F /* MainComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0FF3A5259CCA8C000D6E3F /* MainComponents.swift */; };
+		EF0FF3C5259CFDE9000D6E3F /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EF0FF3C4259CFDE9000D6E3F /* Roboto-Medium.ttf */; };
 		EF26A48B259A707200ED5D2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A48A259A707200ED5D2F /* AppDelegate.swift */; };
 		EF26A48D259A707200ED5D2F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A48C259A707200ED5D2F /* SceneDelegate.swift */; };
 		EF26A48F259A707200ED5D2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF26A48E259A707200ED5D2F /* ViewController.swift */; };
@@ -72,6 +73,7 @@
 		EF0FF39B259CC6EA000D6E3F /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
 		EF0FF3A0259CC87D000D6E3F /* StarsCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarsCounter.swift; sourceTree = "<group>"; };
 		EF0FF3A5259CCA8C000D6E3F /* MainComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainComponents.swift; sourceTree = "<group>"; };
+		EF0FF3C4259CFDE9000D6E3F /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		EF26A487259A707200ED5D2F /* GithubBank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubBank.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF26A48A259A707200ED5D2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF26A48C259A707200ED5D2F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -282,6 +284,7 @@
 				EF26A4DE259A73C300ED5D2F /* Roboto-Bold.ttf */,
 				EF26A4DF259A73C300ED5D2F /* Roboto-Regular.ttf */,
 				EF26A4E0259A73C300ED5D2F /* Roboto-Thin.ttf */,
+				EF0FF3C4259CFDE9000D6E3F /* Roboto-Medium.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -427,6 +430,7 @@
 			files = (
 				EF26A497259A707300ED5D2F /* LaunchScreen.storyboard in Resources */,
 				EF26A494259A707300ED5D2F /* Assets.xcassets in Resources */,
+				EF0FF3C5259CFDE9000D6E3F /* Roboto-Medium.ttf in Resources */,
 				EF26A4E3259A73C300ED5D2F /* Roboto-Thin.ttf in Resources */,
 				EF26A4E2259A73C300ED5D2F /* Roboto-Regular.ttf in Resources */,
 				EF26A4E1259A73C300ED5D2F /* Roboto-Bold.ttf in Resources */,

@@ -25,10 +25,13 @@ class MainComponents: UIView {
     public lazy var title: UILabel = {
         let title = UILabel()
         title.text = "Main Title"
+        title.numberOfLines = 0
+        title.font = UIFont(name: "Roboto-Bold", size: 18.0)
+        title.textColor = Constants.default.repoName
         return title
     }()
     
-    private lazy var stars: StarsCounter = {
+    public lazy var stars: StarsCounter = {
         let stars = StarsCounter()
         return stars
     }()
@@ -36,6 +39,8 @@ class MainComponents: UIView {
     public lazy var repoDescription: UILabel = {
         let label = UILabel()
         label.text = "Lorem ipsum dolor sit amet..."
+        label.numberOfLines = 0
+        label.font = UIFont(name: "Roboto-Regular", size: 14.0)
         return label
     }()
     
@@ -61,7 +66,7 @@ extension MainComponents: ViewCode {
         }
         
         titleStack.snp.makeConstraints { make in
-            make.height.equalTo(50)
+            make.height.equalTo(30)
             make.top.left.equalToSuperview().offset(10)
             make.right.equalToSuperview().offset(-10)
             make.bottom.equalTo(repoDescription.snp.top)

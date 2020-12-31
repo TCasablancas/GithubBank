@@ -31,7 +31,7 @@ class OwnerData: UIView {
     public lazy var ownerAvatar: UIImageView = {
         let imageView = UIImageView()
         imageView.clipsToBounds = true
-        imageView.layer.cornerRadius = imageView.bounds.height / 2
+        imageView.layer.cornerRadius = 35
         imageView.backgroundColor = Constants.default.bgGray
         return imageView
     }()
@@ -40,6 +40,9 @@ class OwnerData: UIView {
         let label = UILabel()
         label.text = "Jon Doe"
         label.textAlignment = .center
+        label.numberOfLines = 0
+        label.font = UIFont(name: "Roboto-Regular", size: 13.0)
+        label.textColor = Constants.default.ownerName
         return label
     }()
     
@@ -62,7 +65,8 @@ extension OwnerData: ViewCode {
     
     func setupConstraints() {
         container.snp.makeConstraints { make in
-            make.width.equalTo(90)
+            make.width.equalTo(110)
+            make.height.equalToSuperview()
         }
         
         stackView.snp.makeConstraints { make in
@@ -71,18 +75,21 @@ extension OwnerData: ViewCode {
         }
         
         avatarContainer.snp.makeConstraints { make in
-            make.width.equalTo(70)
             make.height.equalTo(70)
+            make.top.equalToSuperview().offset(10)
         }
         
         ownerAvatar.snp.makeConstraints { make in
-            make.width.equalToSuperview()
+            make.width.equalTo(70)
             make.height.equalToSuperview()
+            make.centerX.equalToSuperview()
         }
         
         ownerName.snp.makeConstraints { make in
-            make.top.left.equalToSuperview().offset(10)
-            make.right.bottom.equalToSuperview().offset(-10)
+            make.top.equalTo(avatarContainer.snp.bottom).offset(10)
+            make.left.equalToSuperview()
+            make.right.bottom.equalToSuperview()
+            
         }
     }
     

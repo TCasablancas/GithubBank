@@ -30,12 +30,12 @@ class CellView: UIView {
         return stackView
     }()
     
-    private lazy var mainComponents: MainComponents = {
+    public lazy var mainComponents: MainComponents = {
         let main = MainComponents()
         return main
     }()
     
-    private lazy var ownerData: OwnerData = {
+    public lazy var ownerData: OwnerData = {
         let owner = OwnerData()
         return owner
     }()
@@ -82,6 +82,7 @@ extension CellView: ViewCode {
         ownerData.snp.makeConstraints { make in
             make.height.equalToSuperview()
             make.right.equalToSuperview()
+            make.width.equalTo(110)
         }
     }
 }

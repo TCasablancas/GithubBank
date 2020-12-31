@@ -15,5 +15,8 @@ class Constants {
         static let bgGray       = UIColor(hexString: "#FCFDFD")
         static let bgCellGray   = UIColor(hexString: "#FAFBFC")
         static let borderGray   = UIColor(hexString: "#E1E4E8")
+        static let repoName     = UIColor(hexString: "#0366D6")
+        static let ownerName    = UIColor(hexString: "#5E666E")
+        static let iconColor    = UIColor(hexString: "#6C757F")
     }
 }

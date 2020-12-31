@@ -15,12 +15,17 @@ class RepositoriesCollectionView: UICollectionViewController {
     
     lazy var mainView: UIView = {
         let view = UIView()
-        view.backgroundColor = Constants.default.bgGray
+        view.backgroundColor = .white
         return view
     }()
     
     lazy var viewContainer: ContainerView = {
         let view = ContainerView()
+        return view
+    }()
+    
+    private lazy var stars: StarsCounter = {
+        let view = StarsCounter()
         return view
     }()
     
@@ -74,22 +79,24 @@ class RepositoriesCollectionView: UICollectionViewController {
         let navigation = self.navigationController?.navigationBar
         self.navigationController?.navigationItem.largeTitleDisplayMode = .always
         navigation?.prefersLargeTitles = true
-        navigation?.topItem?.title = "gitrepo"
-//        navigation?.backgroundColor = Theme.default.gray
+        navigation?.topItem?.title = "GithubBank"
+        navigation?.backgroundColor = .white
         navigation?.shadowImage = UIImage()
         let attrs = [
-            NSAttributedString.Key.foregroundColor: UIColor.red
-        ]
+            NSAttributedString.Key.foregroundColor: Constants.default.iconColor
+        ] as [ NSAttributedString.Key : Any ]
 
-        UINavigationBar.appearance().titleTextAttributes = attrs
+        UINavigationBar.appearance().largeTitleTextAttributes = attrs
         
         for view in self.navigationController?.navigationBar.subviews ?? [] {
              let subviews = view.subviews
              if subviews.count > 0, let label = subviews[0] as? UILabel {
-//                label.textColor = Theme.default.description
+                label.textColor = Constants.default.ownerName
              }
         }
     }
+    
+    // MARK: UICollectionViewDataSource
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -102,8 +109,9 @@ class RepositoriesCollectionView: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = self.collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! RepositoriesCollectionViewCell
         
-        let item = repositories[indexPath.item]
+        let item = repositories[indexPath.row]
         cell.configureWith(with: item)
+        cell.delegate = self
         
         return cell
     }
@@ -114,6 +122,15 @@ class RepositoriesCollectionView: UICollectionViewController {
 extension RepositoriesCollectionView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: collectionView.bounds.width, height: 160)
+    }
+}
+
+// MARK: - RepositoriesCollectionViewCellDelegate Methods
+
+extension RepositoriesCollectionView: RepositoriesCollectionViewCellDelegate {
+    
+    func routeToRepository(_ repository: MainModels.RepositoryView.ViewModel) {
+        didSelect(repository)
     }
 }
 
