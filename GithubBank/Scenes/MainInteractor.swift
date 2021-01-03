@@ -12,7 +12,7 @@ protocol MainInteractorBusinessLogic {
 }
 
 protocol MainInteractorOutput {
-    func didStartLoading()
+    func didStartLoading(_ show: Bool)
     func didGetData(_ repositories: [Repository])
     func didGetError(_ error: String)
 }
@@ -27,12 +27,13 @@ class MainInteractor: MainInteractorBusinessLogic {
     }
     
     func getData() {
-        output.didStartLoading()
+        output.didStartLoading(true)
         
         self.worker.getreposList() { [output] (response) in
             switch response {
             case .success(let model):
                 output.didGetData(model.items)
+                output.didStartLoading(false)
             case .serverError(let error):
                 let errorData = "\(error.statusCode), -, \(error.msgError)"
                 output.didGetError(errorData)

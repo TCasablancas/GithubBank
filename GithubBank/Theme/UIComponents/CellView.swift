@@ -65,7 +65,7 @@ extension CellView: ViewCode {
         
         cellContainer.snp.makeConstraints { make in
             make.top.left.equalToSuperview().offset(10)
-            make.right.bottom.equalToSuperview().offset(-10)
+            make.right.equalToSuperview().offset(-10)
         }
         
         stackView.snp.makeConstraints { make in

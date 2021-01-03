@@ -6,6 +6,7 @@ PODS:
   - ObjectMapper (3.3.0)
   - Quick (2.2.0)
   - SnapKit (4.2.0)
+  - Toppon (0.1.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.5)
@@ -15,6 +16,7 @@ DEPENDENCIES:
   - ObjectMapper (= 3.3.0)
   - Quick
   - SnapKit (= 4.2.0)
+  - Toppon
 
 SPEC REPOS:
   trunk:
@@ -25,6 +27,7 @@ SPEC REPOS:
     - ObjectMapper
     - Quick
     - SnapKit
+    - Toppon
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
@@ -34,7 +37,8 @@ SPEC CHECKSUMS:
   ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
   Quick: 7fb19e13be07b5dfb3b90d4f9824c855a11af40e
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  Toppon: 06483287ca81da94ef9d6227636f38feb43f9c2d
 
-PODFILE CHECKSUM: 7a21cd731a65c32e69cfa53cf0bf6e4389dcc756
+PODFILE CHECKSUM: e1869826926fb46770569cfa9113df2245935c58
 
 COCOAPODS: 1.9.1

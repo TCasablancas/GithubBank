@@ -68,7 +68,7 @@ extension MainComponents: ViewCode {
         titleStack.snp.makeConstraints { make in
             make.height.equalTo(30)
             make.top.left.equalToSuperview().offset(10)
-            make.right.equalToSuperview().offset(-10)
+            make.right.equalToSuperview()
             make.bottom.equalTo(repoDescription.snp.top)
         }
         
@@ -81,6 +81,7 @@ extension MainComponents: ViewCode {
         stars.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
             make.right.equalToSuperview()
+            make.width.equalTo(90)
         }
         
         repoDescription.snp.makeConstraints { make in

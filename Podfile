@@ -7,6 +7,7 @@ def defaultPods
   pod 'Alamofire', '~> 4.5'
   pod 'Kingfisher', '~> 4.0'
   pod 'FontAwesome.swift'
+  pod 'Toppon'
 end
 
 def testPods

@@ -8,17 +8,18 @@
 import UIKit
 
 protocol MainPresenterOutput: AnyObject {
-    func displayStartLoading()
+    func displayStartLoading(_ show: Bool)
     func displayRepositories(viewModel: [MainModels.RepositoryView.ViewModel])
     func displayError(error: String)
 }
 
 class MainPresenter: MainInteractorOutput {
+
     weak var output: MainPresenterOutput?
     var viewController: RepositoriesCollectionView?
     
-    func didStartLoading() {
-        output?.displayStartLoading()
+    func didStartLoading(_ show: Bool) {
+        output?.displayStartLoading(true)
     }
     
     func didGetData(_ repositories: [Repository]) {

@@ -70,6 +70,4 @@ extension RepositoriesCollectionViewCell: ViewCode {
             make.height.equalToSuperview()
         }
     }
-    
-    
 }

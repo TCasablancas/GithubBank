@@ -71,7 +71,7 @@ extension OwnerData: ViewCode {
         
         stackView.snp.makeConstraints { make in
             make.top.left.equalToSuperview().offset(10)
-            make.right.bottom.equalToSuperview().offset(-10)
+            make.right.bottom.equalToSuperview()
         }
         
         avatarContainer.snp.makeConstraints { make in

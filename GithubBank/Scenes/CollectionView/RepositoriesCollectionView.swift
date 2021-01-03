@@ -11,24 +11,8 @@ import SnapKit
 private let reuseIdentifier = "RepositoriesCollectionViewCell"
 
 class RepositoriesCollectionView: UICollectionViewController {
+    
     // MARK: - UI Components
-    
-    lazy var mainView: UIView = {
-        let view = UIView()
-        view.backgroundColor = .white
-        return view
-    }()
-    
-    lazy var viewContainer: ContainerView = {
-        let view = ContainerView()
-        return view
-    }()
-    
-    private lazy var stars: StarsCounter = {
-        let view = StarsCounter()
-        return view
-    }()
-    
     lazy var activityIndicator: UIActivityIndicatorView = {
         let activity = UIActivityIndicatorView()
         activity.center = self.view.center
@@ -118,32 +102,31 @@ class RepositoriesCollectionView: UICollectionViewController {
 }
 
 // MARK: - UICollectionViewDelegateFlowLayout Methods
-
 extension RepositoriesCollectionView: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.bounds.width, height: 160)
+        return CGSize(width: collectionView.bounds.width, height: 140)
     }
 }
 
 // MARK: - RepositoriesCollectionViewCellDelegate Methods
-
 extension RepositoriesCollectionView: RepositoriesCollectionViewCellDelegate {
-    
     func routeToRepository(_ repository: MainModels.RepositoryView.ViewModel) {
         didSelect(repository)
     }
 }
 
 // MARK: - MainPresenterOutput Methods
-
 extension RepositoriesCollectionView: MainPresenterOutput {
-    func displayStartLoading() {
+    func displayStartLoading(_ show: Bool) {
+        self.activityIndicator.isHidden = show
         self.activityIndicator.startAnimating()
     }
     
     func displayRepositories(viewModel: [MainModels.RepositoryView.ViewModel]) {
         repositories = viewModel
         collectionView.reloadData()
+        self.activityIndicator.isHidden = true
+        self.activityIndicator.stopAnimating()
     }
     
     func displayError(error: String) {
@@ -154,22 +137,14 @@ extension RepositoriesCollectionView: MainPresenterOutput {
 extension RepositoriesCollectionView: ViewCode {
     func viewHierarchy() {
         self.view.addSubview(activityIndicator)
-        self.view.addSubview(mainView)
-        mainView.addSubview(viewContainer)
     }
     
     func setupConstraints() {
-        mainView.snp.makeConstraints{ make in
-            make.width.equalToSuperview()
-            make.height.equalToSuperview()
-        }
-        
-        viewContainer.snp.makeConstraints { make in
-        }
-        
         activityIndicator.snp.makeConstraints { make in
             make.height.width.equalTo(50)
-            
+            make.width.equalTo(50)
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview()
         }
     }
 }
