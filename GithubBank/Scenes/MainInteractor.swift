@@ -33,7 +33,6 @@ class MainInteractor: MainInteractorBusinessLogic {
             switch response {
             case .success(let model):
                 output.didGetData(model.items)
-                output.didStartLoading(false)
             case .serverError(let error):
                 let errorData = "\(error.statusCode), -, \(error.msgError)"
                 output.didGetError(errorData)
