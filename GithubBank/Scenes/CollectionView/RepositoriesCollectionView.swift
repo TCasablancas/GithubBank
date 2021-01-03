@@ -57,6 +57,7 @@ class RepositoriesCollectionView: UICollectionViewController {
         collectionView.register(RepositoriesCollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         collectionView.delegate = self
         collectionView.backgroundColor = Constants.default.bgGray
+        collectionView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 20, right: 0)
     }
     
     private func setupNavigationBar() {
@@ -145,6 +146,10 @@ extension RepositoriesCollectionView: ViewCode {
             make.width.equalTo(50)
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview()
+        }
+        
+        collectionView.snp.makeConstraints { make in
+            make.top.leading.equalTo(view.safeAreaLayoutGuide)
         }
     }
 }
